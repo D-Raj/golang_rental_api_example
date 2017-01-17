@@ -1,5 +1,5 @@
 # Golang Rental API Example
-This is an example of an API built with Golang. It uses routing, JWT, Google OAuth, &amp; MySQL
+This is an example of an API built with Golang. It uses routing, JWT, Google OAuth, &amp; MySQL. Operates on port 8080.
 
 
 # Routes
