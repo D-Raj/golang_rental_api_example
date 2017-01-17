@@ -1,4 +1,4 @@
-# golang_rental_api_example
+# Golang Rental API Example
 This is an example of an API built with Golang. It uses routing, JWT, Google OAuth, &amp; MySQL
 
 
