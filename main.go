@@ -67,6 +67,7 @@ var currentUser User
 
 func main() {
 	// INITIALIZE DB
+	// This is an example login for a mysql db
 	db, err = sql.Open("mysql", "root:pass@/rentals")
 	if err != nil {
 		panic(err.Error())
@@ -179,8 +180,8 @@ func RentalDestroy(w http.ResponseWriter, r *http.Request) {
 var (
 	googleOauthConfig = &oauth2.Config{
 		RedirectURL:  "http://localhost:8080/authcallback",
-		ClientID:     "837356299785-d6h7rniad39obu7518h1eskeq3uo2htl.apps.googleusercontent.com", // should be protected add to db
-		ClientSecret: "X8acf-ED8VKEacw3GgHo4BBi",                                                 // should be protected add to db
+		ClientID:     "837356299785-d6h7rniad39obu7518h1eskeq3uo2htl.apps.googleusercontent.com", // all this should be protected in a production API
+		ClientSecret: "X8acf-ED8VKEacw3GgHo4BBi",                                                
 		Scopes: []string{"https://www.googleapis.com/auth/userinfo.profile",
 			"https://www.googleapis.com/auth/userinfo.email"},
 		Endpoint: google.Endpoint,
